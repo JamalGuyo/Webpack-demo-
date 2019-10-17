@@ -1,15 +1,8 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const path = require('path'); //path module belongs to node
 
 module.exports = {
-  mode: 'development',
-  devtool: 'none',
   entry: './src/index.js',
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'main.[contenthash].js'
-  },
   module: {
     rules: [
       {
